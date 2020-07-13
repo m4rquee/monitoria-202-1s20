@@ -1,0 +1,14 @@
+Como usar o Makefile.
+
+1. Pré requisitos.
+    a. Ter no mesmo diretório:
+    	- arquivos: Makefile, *.h, *.c, lab07.c;
+    	- subdiretório: testes.
+    b. Os arquivos de entrada (arqxx.in) e os das respostas esperadas (arqxx.res) devem estar na pasta 'testes';
+    c. Ter a ferramenta "valgrind" instalada.
+   
+2. Uso das regras
+   make lab07.o		produz objeto(s) necessário(s)
+   make build		produduz o executável (lab);
+   make testar_abertos	executa o programa com as entradas 'arqxx.in', gera as saísas 'arqxx.out' e compara com as respostas esepradas 'arqxx.res';
+   make checar_testes	executa o programa com as entradas 'arqxx.in', gera as saísas 'arqxx.out', compara com as respostas esepradas 'arqxx.res' e checa se existe vazamento de memória usando valgrind.
