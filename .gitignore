@@ -51,7 +51,9 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
+# Idea folders
 cmake-build-debug/
 .idea/
 
+# Labs executables
 lab[0-9][0-9]/lab
